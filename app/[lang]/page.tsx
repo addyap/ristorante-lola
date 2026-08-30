@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 
 const MAP_QUERY =
   "https://www.google.com/maps/search/?api=1&query=Via+S.+Caterina+da+Siena+16+61033+Fermignano";
+const FACEBOOK_URL = "https://www.facebook.com/RistorantePizzeriaDaLola";
 
 export default function Home({ params }: { params: { lang: string } }) {
   if (!isLocale(params.lang)) notFound();
@@ -206,6 +207,21 @@ export default function Home({ params }: { params: { lang: string } }) {
             da <span className="text-tomato">Lola</span>
           </span>
           <p className="text-sm">{dict.footer.tagline}</p>
+          <a
+            href={FACEBOOK_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-medium text-cream transition-colors hover:text-tomato"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              className="h-4 w-4 fill-current"
+            >
+              <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z" />
+            </svg>
+            {dict.footer.facebook}
+          </a>
           <p className="text-xs text-cream/50">
             © {new Date().getFullYear()} Ristorante da Lola — {dict.footer.rights}
           </p>

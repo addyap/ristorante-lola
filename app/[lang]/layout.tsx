@@ -30,7 +30,9 @@ export async function generateMetadata({
   const lang = isLocale(params.lang) ? params.lang : "it";
   const dict = getDictionary(lang);
   return {
-    metadataBase: new URL("https://ristorante-lola.vercel.app"),
+    metadataBase: new URL(
+      "https://ristorante-lola-antony-addy-s-projects.vercel.app"
+    ),
     title: dict.meta.title,
     description: dict.meta.description,
     openGraph: {
