@@ -12,7 +12,7 @@ export const gallery: { src: string; alt: string }[] = [
   { src: "/photos/13-gamberoni-alla-griglia.jpg", alt: "Gamberoni alla griglia" },
   { src: "/photos/04-tartufo-bianco-e-vino.jpg", alt: "Tartufo bianco e vino del territorio" },
   { src: "/photos/14-pomodoro-e-burrata.jpg", alt: "Pomodoro e burrata" },
-  { src: "/photos/10-sala-interna.jpg", alt: "La sala del ristorante" },
+  { src: "/photos/16-sala-interna-bar.jpg", alt: "Il bar e la sala del ristorante" },
 ];
 
 // Specialties use one representative photo each.

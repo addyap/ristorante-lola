@@ -15,6 +15,8 @@
     "titlePre": "da",
     "titleMain": "Lola",
     "subtitle": "Die Küche der Marken — hausgemachte Pasta und Fleisch vom Holzkohlegrill, dazu eine reiche Auswahl an Pizzen aus dem Holzofen.",
+    "pillars": ["Hausgemachte Pasta", "Fleisch vom Grill", "Holzofen"],
+    "scrollCue": "Scrollen",
     "ctaMenu": "Unsere Spezialitäten",
     "ctaFind": "So finden Sie uns"
   },
@@ -63,10 +65,17 @@
     "addressLabel": "Adresse",
     "address": "Via S. Caterina da Siena, 16\n61033 Fermignano (PU) — Italien",
     "hoursLabel": "Öffnungszeiten",
-    "hoursValue": "Mittag und Abend — Zeiten folgen in Kürze",
+    "hoursValue": "Mittag 12:00–14:30 · Abend 19:00–22:00\nMittwochs geschlossen",
     "phoneLabel": "Telefon",
-    "phoneValue": "Wird ergänzt",
-    "mapCta": "In Karte öffnen"
+    "phoneValue": "0722 331684",
+    "mobileValue": "347 762 1359",
+    "emailLabel": "E-Mail",
+    "email": "lolaristorante@gmail.com",
+    "invite": "Sie finden uns in Fermignano, wenige Schritte vom Zentrum. Reservieren Sie einen Tisch oder schauen Sie einfach vorbei.",
+    "callCta": "Restaurant anrufen",
+    "whatsappCta": "Per WhatsApp schreiben",
+    "whatsappMsg": "Hallo! Ich möchte einen Tisch bei da Lola reservieren.",
+    "mapCta": "Route planen"
   },
   "footer": {
     "tagline": "Restaurant · Pizzeria in Fermignano",

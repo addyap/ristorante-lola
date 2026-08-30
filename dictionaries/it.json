@@ -15,6 +15,8 @@
     "titlePre": "da",
     "titleMain": "Lola",
     "subtitle": "Cucina marchigiana, pasta fatta in casa e carne alla brace, con una ricca scelta di pizze cotte nel forno a legna.",
+    "pillars": ["Pasta fatta in casa", "Carne alla brace", "Forno a legna"],
+    "scrollCue": "Scorri",
     "ctaMenu": "Le nostre specialità",
     "ctaFind": "Come raggiungerci"
   },
@@ -63,10 +65,17 @@
     "addressLabel": "Indirizzo",
     "address": "Via S. Caterina da Siena, 16\n61033 Fermignano (PU) — Italia",
     "hoursLabel": "Orari",
-    "hoursValue": "Pranzo e cena — orari in aggiornamento",
+    "hoursValue": "Pranzo 12:00–14:30 · Cena 19:00–22:00\nMercoledì chiuso",
     "phoneLabel": "Telefono",
-    "phoneValue": "Da inserire",
-    "mapCta": "Apri nella mappa"
+    "phoneValue": "0722 331684",
+    "mobileValue": "347 762 1359",
+    "emailLabel": "Email",
+    "email": "lolaristorante@gmail.com",
+    "invite": "Ci trovate a Fermignano, a due passi dal centro. Prenotate un tavolo o passate semplicemente a trovarci.",
+    "callCta": "Chiama il ristorante",
+    "whatsappCta": "Scrivici su WhatsApp",
+    "whatsappMsg": "Ciao! Vorrei prenotare un tavolo da Lola.",
+    "mapCta": "Indicazioni stradali"
   },
   "footer": {
     "tagline": "Ristorante · Pizzeria a Fermignano",

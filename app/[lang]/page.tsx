@@ -1,13 +1,25 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
 import { gallery, specialtyImages } from "@/lib/gallery";
 import Header from "@/components/Header";
+import HeroBrace from "@/components/HeroBrace";
 
 const MAP_QUERY =
   "https://www.google.com/maps/search/?api=1&query=Via+S.+Caterina+da+Siena+16+61033+Fermignano";
+const MAP_EMBED =
+  "https://www.google.com/maps?q=Via%20S.%20Caterina%20da%20Siena%2016%2061033%20Fermignano&output=embed";
+const TEL = "+390722331684";
+const TEL_MOBILE = "+393477621359";
+const EMAIL = "lolaristorante@gmail.com";
+const WHATSAPP_NUMBER = "393477621359";
 const FACEBOOK_URL = "https://www.facebook.com/RistorantePizzeriaDaLola";
+
+function waHref(message: string) {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
 
 export default function Home({ params }: { params: { lang: string } }) {
   if (!isLocale(params.lang)) notFound();
@@ -19,44 +31,17 @@ export default function Home({ params }: { params: { lang: string } }) {
       <Header lang={lang} dict={dict} />
 
       <main>
-        {/* Hero */}
-        <section className="relative isolate overflow-hidden">
-          <Image
-            src="/photos/05-pizze-caprese-forno-a-legna.jpg"
-            alt=""
-            fill
-            priority
-            className="-z-10 object-cover"
-          />
-          <div className="-z-10 absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/55 to-charcoal/80" />
-          <div className="mx-auto flex max-w-6xl flex-col items-start px-5 py-24 sm:py-32">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-cream/80">
-              {dict.hero.eyebrow}
-            </p>
-            <h1 className="font-serif text-6xl text-cream sm:text-7xl">
-              {dict.hero.titlePre}{" "}
-              <span className="text-tomato">{dict.hero.titleMain}</span>
-            </h1>
-            <div className="tricolore mt-5 w-40 rounded-full" />
-            <p className="mt-6 max-w-xl text-lg text-cream/90">
-              {dict.hero.subtitle}
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#specialties"
-                className="rounded-full bg-tomato px-6 py-3 font-semibold text-cream transition-colors hover:bg-tomato-dark"
-              >
-                {dict.hero.ctaMenu}
-              </a>
-              <a
-                href="#info"
-                className="rounded-full border border-cream/70 px-6 py-3 font-semibold text-cream transition-colors hover:bg-cream hover:text-charcoal"
-              >
-                {dict.hero.ctaFind}
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* Hero — "Dalla Brace" */}
+        <HeroBrace
+          eyebrow={dict.hero.eyebrow}
+          titlePre={dict.hero.titlePre}
+          titleMain={dict.hero.titleMain}
+          subtitle={dict.hero.subtitle}
+          pillars={dict.hero.pillars}
+          scrollCue={dict.hero.scrollCue}
+          ctaMenu={dict.hero.ctaMenu}
+          ctaFind={dict.hero.ctaFind}
+        />
 
         {/* Intro */}
         <section className="bg-cream">
@@ -175,26 +160,98 @@ export default function Home({ params }: { params: { lang: string } }) {
           </div>
         </section>
 
-        {/* Info */}
-        <section id="info" className="scroll-mt-20 bg-cream">
-          <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
-            <h2 className="text-center font-serif text-3xl text-charcoal sm:text-4xl">
-              {dict.info.title}
-            </h2>
-            <div className="mx-auto mt-10 grid max-w-3xl gap-6 sm:grid-cols-3">
-              <InfoCard label={dict.info.addressLabel} value={dict.info.address} />
-              <InfoCard label={dict.info.hoursLabel} value={dict.info.hoursValue} />
-              <InfoCard label={dict.info.phoneLabel} value={dict.info.phoneValue} />
+        {/* Info — Find Us */}
+        <section
+          id="info"
+          className="brace-find scroll-mt-20 bg-charcoal text-cream"
+        >
+          <div className="mx-auto grid max-w-6xl items-stretch gap-10 px-5 py-16 sm:py-24 lg:grid-cols-2">
+            {/* Left — the invitation */}
+            <div className="flex flex-col justify-center">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-amber-300/80">
+                {dict.hero.eyebrow}
+              </p>
+              <h2 className="mt-3 font-serif text-4xl leading-tight sm:text-5xl">
+                {dict.info.title}
+              </h2>
+              <p className="mt-5 max-w-md text-lg leading-relaxed text-cream/80">
+                {dict.info.invite}
+              </p>
+
+              <dl className="mt-9 space-y-5">
+                <InfoRow
+                  label={dict.info.addressLabel}
+                  icon={<PinIcon />}
+                >
+                  <span className="whitespace-pre-line">{dict.info.address}</span>
+                </InfoRow>
+                <InfoRow label={dict.info.hoursLabel} icon={<ClockIcon />}>
+                  <span className="whitespace-pre-line">
+                    {dict.info.hoursValue}
+                  </span>
+                </InfoRow>
+                <InfoRow label={dict.info.phoneLabel} icon={<PhoneIcon />}>
+                  <a
+                    href={`tel:${TEL}`}
+                    className="transition-colors hover:text-amber-300"
+                  >
+                    {dict.info.phoneValue}
+                  </a>
+                  <span className="px-2 text-cream/30">·</span>
+                  <a
+                    href={`tel:${TEL_MOBILE}`}
+                    className="transition-colors hover:text-amber-300"
+                  >
+                    {dict.info.mobileValue}
+                  </a>
+                </InfoRow>
+                <InfoRow label={dict.info.emailLabel} icon={<MailIcon />}>
+                  <a
+                    href={`mailto:${EMAIL}`}
+                    className="break-all transition-colors hover:text-amber-300"
+                  >
+                    {dict.info.email}
+                  </a>
+                </InfoRow>
+              </dl>
+
+              <div className="mt-9 flex flex-wrap gap-3">
+                <a
+                  href={MAP_QUERY}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="brace-btn brace-btn-primary"
+                >
+                  {dict.info.mapCta}
+                </a>
+                <a
+                  href={waHref(dict.info.whatsappMsg)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="brace-btn brace-btn-wa"
+                >
+                  <WhatsAppIcon className="mr-2 h-5 w-5 fill-current" />
+                  {dict.info.whatsappCta}
+                </a>
+                <a href={`tel:${TEL}`} className="brace-btn brace-btn-ghost">
+                  {dict.info.callCta}
+                </a>
+              </div>
             </div>
-            <div className="mt-8 text-center">
-              <a
-                href={MAP_QUERY}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-full bg-basil px-6 py-3 font-semibold text-cream transition-colors hover:bg-basil-dark"
-              >
-                {dict.info.mapCta}
-              </a>
+
+            {/* Right — the live map */}
+            <div className="brace-map relative min-h-[340px] overflow-hidden rounded-3xl ring-1 ring-white/15 lg:min-h-[440px]">
+              <iframe
+                title="Ristorante da Lola — Fermignano"
+                src={MAP_EMBED}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 h-full w-full"
+              />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 flex items-center gap-2 bg-gradient-to-t from-charcoal/85 to-transparent px-5 pb-4 pt-10 text-sm text-cream">
+                <PinIcon />
+                <span>Via S. Caterina da Siena, 16 · Fermignano</span>
+              </div>
             </div>
           </div>
         </section>
@@ -227,17 +284,83 @@ export default function Home({ params }: { params: { lang: string } }) {
           </p>
         </div>
       </footer>
+
+      {/* Floating WhatsApp action */}
+      <a
+        href={waHref(dict.info.whatsappMsg)}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={dict.info.whatsappCta}
+        className="brace-fab group"
+      >
+        <span className="brace-fab-ring" aria-hidden="true" />
+        <WhatsAppIcon className="relative z-10 h-7 w-7 shrink-0 fill-current" />
+        <span className="brace-fab-label">{dict.info.whatsappCta}</span>
+      </a>
     </>
   );
 }
 
-function InfoCard({ label, value }: { label: string; value: string }) {
+function WhatsAppIcon({ className }: { className?: string }) {
   return (
-    <div className="rounded-2xl bg-cream-dark/40 p-6 text-center ring-1 ring-cream-dark">
-      <h3 className="text-xs font-semibold uppercase tracking-wide text-charcoal/60">
-        {label}
-      </h3>
-      <p className="mt-2 whitespace-pre-line font-medium text-charcoal">{value}</p>
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <path d="M17.5 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.08-.3-.15-1.26-.47-2.4-1.48-.89-.8-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48c0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z" />
+    </svg>
+  );
+}
+
+function InfoRow({
+  label,
+  icon,
+  children,
+}: {
+  label: string;
+  icon: ReactNode;
+  children: ReactNode;
+}) {
+  return (
+    <div className="flex items-start gap-4">
+      <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-tomato/15 text-amber-300 ring-1 ring-amber-300/25">
+        {icon}
+      </span>
+      <div>
+        <dt className="text-xs font-semibold uppercase tracking-wide text-cream/55">
+          {label}
+        </dt>
+        <dd className="mt-1 font-medium text-cream">{children}</dd>
+      </div>
     </div>
+  );
+}
+
+function PinIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" aria-hidden="true">
+      <path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
+    </svg>
+  );
+}
+
+function ClockIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" aria-hidden="true">
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.6 3.7 2.1-1 1.7L11 13.5V6.5h2v6.1Z" />
+    </svg>
+  );
+}
+
+function PhoneIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" aria-hidden="true">
+      <path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1l-2.2 2.2Z" />
+    </svg>
+  );
+}
+
+function MailIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" aria-hidden="true">
+      <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 3.25V18h16V7.25l-8 5-8-5ZM18.4 6H5.6l6.4 4Z" />
+    </svg>
   );
 }

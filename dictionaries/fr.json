@@ -15,6 +15,8 @@
     "titlePre": "da",
     "titleMain": "Lola",
     "subtitle": "La cuisine des Marches — pâtes maison et viande grillée à la braise, avec un large choix de pizzas au feu de bois.",
+    "pillars": ["Pâtes maison", "Viande à la braise", "Four à bois"],
+    "scrollCue": "Défiler",
     "ctaMenu": "Nos spécialités",
     "ctaFind": "Comment nous trouver"
   },
@@ -63,10 +65,17 @@
     "addressLabel": "Adresse",
     "address": "Via S. Caterina da Siena, 16\n61033 Fermignano (PU) — Italie",
     "hoursLabel": "Horaires",
-    "hoursValue": "Déjeuner et dîner — horaires à venir",
+    "hoursValue": "Déjeuner 12h00–14h30 · Dîner 19h00–22h00\nFermé le mercredi",
     "phoneLabel": "Téléphone",
-    "phoneValue": "À renseigner",
-    "mapCta": "Ouvrir dans le plan"
+    "phoneValue": "0722 331684",
+    "mobileValue": "347 762 1359",
+    "emailLabel": "E-mail",
+    "email": "lolaristorante@gmail.com",
+    "invite": "Vous nous trouverez à Fermignano, à deux pas du centre. Réservez une table ou passez simplement nous voir.",
+    "callCta": "Appeler le restaurant",
+    "whatsappCta": "Écrivez-nous sur WhatsApp",
+    "whatsappMsg": "Bonjour ! Je voudrais réserver une table chez da Lola.",
+    "mapCta": "Itinéraire"
   },
   "footer": {
     "tagline": "Restaurant · Pizzeria à Fermignano",

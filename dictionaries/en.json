@@ -15,6 +15,8 @@
     "titlePre": "da",
     "titleMain": "Lola",
     "subtitle": "The cuisine of Le Marche — homemade pasta and char-grilled meat, with a generous choice of wood-fired pizzas.",
+    "pillars": ["Homemade pasta", "Char-grilled meat", "Wood-fired oven"],
+    "scrollCue": "Scroll",
     "ctaMenu": "Our specialities",
     "ctaFind": "How to find us"
   },
@@ -63,10 +65,17 @@
     "addressLabel": "Address",
     "address": "Via S. Caterina da Siena, 16\n61033 Fermignano (PU) — Italy",
     "hoursLabel": "Opening hours",
-    "hoursValue": "Lunch and dinner — hours coming soon",
+    "hoursValue": "Lunch 12:00–14:30 · Dinner 19:00–22:00\nClosed Wednesday",
     "phoneLabel": "Phone",
-    "phoneValue": "To be added",
-    "mapCta": "Open in maps"
+    "phoneValue": "0722 331684",
+    "mobileValue": "347 762 1359",
+    "emailLabel": "Email",
+    "email": "lolaristorante@gmail.com",
+    "invite": "You'll find us in Fermignano, a short walk from the centre. Book a table or simply drop by.",
+    "callCta": "Call the restaurant",
+    "whatsappCta": "Message us on WhatsApp",
+    "whatsappMsg": "Hi! I'd like to book a table at da Lola.",
+    "mapCta": "Get directions"
   },
   "footer": {
     "tagline": "Restaurant · Pizzeria in Fermignano",
