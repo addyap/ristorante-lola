@@ -165,7 +165,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         {/* People — the team behind Lola */}
         <section id="people" className="scroll-mt-20 bg-cream">
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:py-24 md:grid-cols-2">
-            <div className="relative order-2 md:order-1">
+            <div className="relative order-1">
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl ring-1 ring-cream-dark shadow-[0_30px_70px_-30px_rgba(226,98,29,0.5)]">
                 <Image
                   src="/photos/15-la-squadra-in-cucina.jpg"
@@ -179,7 +179,7 @@ export default function Home({ params }: { params: { lang: string } }) {
                 </div>
               </div>
             </div>
-            <div className="order-1 md:order-2">
+            <div className="order-2">
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-tomato">
                 {dict.people.eyebrow}
               </p>

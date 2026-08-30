@@ -230,7 +230,7 @@ export default function HeroBrace({
 
       {/* Content */}
       <div className="brace-content relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-5">
-        <p className="brace-kicker text-xs font-semibold uppercase tracking-[0.32em] text-amber-200/80 sm:text-sm">
+        <p className="brace-kicker text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-amber-200/80 sm:text-sm sm:tracking-[0.32em]">
           {eyebrow}
         </p>
 
@@ -257,7 +257,7 @@ export default function HeroBrace({
           {subtitle}
         </p>
 
-        <ul className="brace-pillars mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-medium uppercase tracking-wider text-amber-100/85 sm:text-[0.95rem]">
+        <ul className="brace-pillars mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium uppercase tracking-wide text-amber-100/85 sm:gap-x-4 sm:text-[0.95rem] sm:tracking-wider">
           {pillars.map((p, i) => (
             <li key={p} className="flex items-center gap-4">
               {i > 0 && <span className="brace-dot" aria-hidden="true" />}
