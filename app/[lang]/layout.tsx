@@ -1,18 +1,19 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Fraunces, Instrument_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { locales, isLocale, type Locale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
 
-const playfair = Playfair_Display({
+const playfair = Fraunces({
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
+  axes: ["opsz", "SOFT"],
 });
 
-const inter = Inter({
+const inter = Instrument_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
