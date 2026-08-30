@@ -41,6 +41,8 @@ export default function Home({ params }: { params: { lang: string } }) {
           scrollCue={dict.hero.scrollCue}
           ctaMenu={dict.hero.ctaMenu}
           ctaFind={dict.hero.ctaFind}
+          whatsappHref={waHref(dict.info.whatsappMsg)}
+          whatsappLabel="WhatsApp"
         />
 
         {/* Intro */}
