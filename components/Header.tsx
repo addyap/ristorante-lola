@@ -74,11 +74,11 @@ export default function Header({
           />
           <span
             className={
-              "font-serif text-xl leading-none transition-colors " +
+              "font-serif text-lg leading-none transition-colors sm:text-xl " +
               (barSolid ? "text-charcoal" : "text-cream")
             }
           >
-            da{" "}
+            Ristorante da{" "}
             <span className={barSolid ? "text-tomato" : "text-amber-300"}>
               Lola
             </span>
