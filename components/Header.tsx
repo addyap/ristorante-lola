@@ -36,10 +36,10 @@ export default function Header({
   return (
     <header
       className={
-        "fixed inset-x-0 top-0 z-30 transition-colors duration-500 " +
+        "fixed inset-x-0 top-0 z-30 transition-all duration-500 " +
         (solid
           ? "border-b border-cream-dark/70 bg-cream/90 backdrop-blur"
-          : "border-b border-transparent bg-transparent")
+          : "border-b border-transparent bg-gradient-to-b from-black/55 via-black/25 to-transparent")
       }
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">

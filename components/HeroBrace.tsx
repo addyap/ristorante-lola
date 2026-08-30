@@ -191,16 +191,28 @@ export default function HeroBrace({
       ref={rootRef}
       className="brace-hero relative h-[100svh] min-h-[560px] w-full overflow-hidden bg-[#0b0908] text-cream"
     >
-      {/* Layer 1 — the char-grilled scene, sunk into darkness */}
+      {/* Layer 1 — fire-cooked scenes, sunk into darkness, slowly
+          crossfading between the grill and the wood-fired oven */}
       <div className="brace-photo absolute inset-0">
-        <Image
-          src="/photos/12-carne-alla-brace.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
+        <div className="brace-slide brace-slide-1 absolute inset-0">
+          <Image
+            src="/photos/12-carne-alla-brace.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
+        <div className="brace-slide brace-slide-2 absolute inset-0">
+          <Image
+            src="/photos/05-pizze-caprese-forno-a-legna.jpg"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
       </div>
 
       {/* Grade + directional darkness so the wordmark always reads */}

@@ -60,6 +60,12 @@
     "title": "Un posto per grandi e piccini",
     "body": "Il bocciodromo adiacente e il parco giochi appena fuori dal ristorante rappresentano un ottimo svago per grandi e piccini, sia a pranzo che a cena. Un'atmosfera semplice e familiare dove fermarsi con calma, tra un piatto e l'altro."
   },
+  "people": {
+    "eyebrow": "Chi siamo",
+    "title": "Le mani dietro da Lola",
+    "body": "Dietro ogni piatto c'è una squadra che impasta la pasta a mano ogni mattina e tiene viva la brace fino a sera. Da Lola non è soltanto un'insegna: è la nostra cucina, aperta a voi come si accoglie qualcuno a casa.",
+    "caption": "In cucina, tra impasti e brace."
+  },
   "info": {
     "title": "Dove siamo",
     "addressLabel": "Indirizzo",

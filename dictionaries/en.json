@@ -60,6 +60,12 @@
     "title": "A place for grown-ups and children alike",
     "body": "The bowls green next door and the playground just outside the restaurant make for great fun for grown-ups and children alike, at both lunch and dinner. A simple, family atmosphere where you can take your time between one dish and the next."
   },
+  "people": {
+    "eyebrow": "Who we are",
+    "title": "The people behind da Lola",
+    "body": "Behind every plate is a team that rolls the pasta by hand each morning and keeps the coals alive until late. da Lola isn't just a sign over the door — it's our kitchen, opened to you the way you'd welcome someone home.",
+    "caption": "In the kitchen, between dough and embers."
+  },
   "info": {
     "title": "Find us",
     "addressLabel": "Address",

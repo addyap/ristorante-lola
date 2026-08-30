@@ -48,6 +48,14 @@ body {
   animation: bracePhotoIn 1.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
   will-change: transform, scale;
 }
+/* Slow crossfade between the two fire-cooked scenes */
+.brace-slide-1 {
+  animation: braceCross 16s ease-in-out infinite;
+}
+.brace-slide-2 {
+  opacity: 0;
+  animation: braceCross 16s ease-in-out -8s infinite;
+}
 
 /* Directional darkness + a warm pool at the oven floor. A static ambient
    glow keeps the hero rich even with no cursor (mobile / first paint). */
@@ -375,6 +383,19 @@ body {
   }
 }
 
+@keyframes braceCross {
+  0%,
+  42% {
+    opacity: 1;
+  }
+  50%,
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes bracePhotoIn {
   from {
     scale: 1.16;
@@ -448,6 +469,8 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .brace-photo,
+  .brace-slide-1,
+  .brace-slide-2,
   .brace-light,
   .brace-embers,
   .brace-letter,

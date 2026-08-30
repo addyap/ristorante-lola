@@ -60,6 +60,12 @@
     "title": "Un lieu pour petits et grands",
     "body": "Le boulodrome attenant et l'aire de jeux juste devant le restaurant offrent une belle détente pour petits et grands, au déjeuner comme au dîner. Une atmosphère simple et familiale où prendre son temps, d'un plat à l'autre."
   },
+  "people": {
+    "eyebrow": "Qui sommes-nous",
+    "title": "Les mains derrière da Lola",
+    "body": "Derrière chaque plat, une équipe qui pétrit les pâtes à la main chaque matin et entretient la braise jusqu'au soir. da Lola n'est pas qu'une enseigne : c'est notre cuisine, ouverte comme on accueille quelqu'un chez soi.",
+    "caption": "En cuisine, entre pâtes et braise."
+  },
   "info": {
     "title": "Nous trouver",
     "addressLabel": "Adresse",

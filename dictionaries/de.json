@@ -60,6 +60,12 @@
     "title": "Ein Ort für Groß und Klein",
     "body": "Die Boccia-Bahn nebenan und der Spielplatz direkt vor dem Restaurant sorgen für gute Unterhaltung für Groß und Klein, mittags wie abends. Eine schlichte, familiäre Atmosphäre, in der man sich von Gang zu Gang Zeit lassen kann."
   },
+  "people": {
+    "eyebrow": "Wer wir sind",
+    "title": "Die Menschen hinter da Lola",
+    "body": "Hinter jedem Gericht steht ein Team, das die Pasta jeden Morgen von Hand ausrollt und die Glut bis zum Abend hält. da Lola ist nicht nur ein Schild über der Tür — es ist unsere Küche, geöffnet, wie man Gäste zu Hause empfängt.",
+    "caption": "In der Küche, zwischen Teig und Glut."
+  },
   "info": {
     "title": "Anfahrt",
     "addressLabel": "Adresse",

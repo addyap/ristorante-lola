@@ -160,6 +160,41 @@ export default function Home({ params }: { params: { lang: string } }) {
           </div>
         </section>
 
+        {/* People — the team behind Lola */}
+        <section id="people" className="scroll-mt-20 bg-cream">
+          <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:py-24 md:grid-cols-2">
+            <div className="relative order-2 md:order-1">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl ring-1 ring-cream-dark shadow-[0_30px_70px_-30px_rgba(226,98,29,0.5)]">
+                <Image
+                  src="/photos/15-la-squadra-in-cucina.jpg"
+                  alt={dict.people.caption}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-charcoal/80 to-transparent px-5 pb-4 pt-12 text-sm text-cream/90">
+                  {dict.people.caption}
+                </div>
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-tomato">
+                {dict.people.eyebrow}
+              </p>
+              <h2 className="mt-3 font-serif text-3xl text-charcoal sm:text-4xl">
+                {dict.people.title}
+              </h2>
+              <div className="tricolore mt-4 w-24 rounded-full" />
+              <p className="mt-6 text-lg leading-relaxed text-charcoal/80">
+                {dict.people.body}
+              </p>
+              <p className="mt-6 font-serif text-2xl text-basil">
+                — da <span className="text-tomato">Lola</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Info — Find Us */}
         <section
           id="info"
