@@ -193,7 +193,7 @@ export default function HeroBrace({
   return (
     <section
       ref={rootRef}
-      className="brace-hero relative h-[100svh] min-h-[560px] w-full overflow-hidden bg-[#0b0908] text-cream"
+      className="brace-hero relative h-[86svh] min-h-[560px] max-h-[860px] w-full overflow-hidden bg-[#0b0908] text-cream"
     >
       {/* Layer 1 — fire-cooked scenes, sunk into darkness, slowly
           crossfading between the grill and the wood-fired oven */}
@@ -238,7 +238,7 @@ export default function HeroBrace({
           <span className="brace-pre block text-2xl font-medium text-cream/80 sm:text-3xl">
             {titlePre}
           </span>
-          <span className="brace-main block text-[clamp(4.5rem,18vw,13rem)]">
+          <span className="brace-main block text-[clamp(3.5rem,12vw,9rem)]">
             {letters.map((ch, i) => (
               <span
                 key={i}
