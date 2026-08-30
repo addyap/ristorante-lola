@@ -6,6 +6,7 @@ import Link from "next/link";
 import type { Locale } from "@/lib/i18n";
 import type { Dictionary } from "@/lib/dictionaries";
 import LanguageSwitcher from "./LanguageSwitcher";
+import Ticker from "./Ticker";
 
 export default function Header({
   lang,
@@ -79,7 +80,7 @@ export default function Header({
             }
           >
             Ristorante da{" "}
-            <span className={barSolid ? "text-tomato" : "text-amber-300"}>
+            <span className={barSolid ? "text-[#9c6f2b]" : "text-[#ecd39a]"}>
               Lola
             </span>
           </span>
@@ -133,6 +134,9 @@ export default function Header({
           </button>
         </div>
       </div>
+
+      {/* Moving announcement ribbon, between the menu and the hero */}
+      <Ticker items={dict.ticker.items} label={dict.ticker.label} />
 
       {/* Mobile dropdown panel */}
       {open && (

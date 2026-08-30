@@ -10,6 +10,15 @@
     "info": "Dove siamo",
     "reserve": "Prenota"
   },
+  "ticker": {
+    "label": "Avvisi",
+    "items": [
+      "Orari · Pranzo 12:00–14:30 · Cena 19:00–22:00",
+      "Mercoledì chiuso",
+      "Prenota il tuo tavolo · 0722 331684",
+      "Novità e serate speciali — presto qui"
+    ]
+  },
   "hero": {
     "eyebrow": "Pizzeria · Cucina marchigiana · Fermignano",
     "titlePre": "Ristorante da",

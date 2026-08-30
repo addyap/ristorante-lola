@@ -10,6 +10,15 @@
     "info": "Find us",
     "reserve": "Book"
   },
+  "ticker": {
+    "label": "Announcements",
+    "items": [
+      "Hours · Lunch 12:00–14:30 · Dinner 19:00–22:00",
+      "Closed Wednesday",
+      "Book your table · 0722 331684",
+      "News & special evenings — coming soon"
+    ]
+  },
   "hero": {
     "eyebrow": "Pizzeria · Marchigiana cuisine · Fermignano",
     "titlePre": "Ristorante da",

@@ -59,7 +59,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         </section>
 
         {/* Specialties */}
-        <section id="specialties" className="scroll-mt-20 bg-cream-dark/40">
+        <section id="specialties" className="scroll-mt-28 bg-cream-dark/40">
           <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
             <div className="text-center">
               <h2 className="font-serif text-3xl text-charcoal sm:text-4xl">
@@ -110,7 +110,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         </section>
 
         {/* Gallery */}
-        <section id="gallery" className="scroll-mt-20 bg-cream">
+        <section id="gallery" className="scroll-mt-28 bg-cream">
           <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
             <div className="text-center">
               <h2 className="font-serif text-3xl text-charcoal sm:text-4xl">
@@ -141,7 +141,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         </section>
 
         {/* About */}
-        <section id="about" className="scroll-mt-20 bg-basil text-cream">
+        <section id="about" className="scroll-mt-28 bg-basil text-cream">
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:py-20 md:grid-cols-2">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl ring-1 ring-cream/20">
               <Image
@@ -163,7 +163,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         </section>
 
         {/* People — the team behind Lola */}
-        <section id="people" className="scroll-mt-20 bg-cream">
+        <section id="people" className="scroll-mt-28 bg-cream">
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:py-24 md:grid-cols-2">
             <div className="relative order-1">
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl ring-1 ring-cream-dark shadow-[0_30px_70px_-30px_rgba(226,98,29,0.5)]">
@@ -200,7 +200,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         {/* Info — Find Us */}
         <section
           id="info"
-          className="brace-find scroll-mt-20 bg-charcoal text-cream"
+          className="brace-find scroll-mt-28 bg-charcoal text-cream"
         >
           <div className="mx-auto grid max-w-6xl items-stretch gap-10 px-5 py-16 sm:py-24 lg:grid-cols-2">
             {/* Left — the invitation */}

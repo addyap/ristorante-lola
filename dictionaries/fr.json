@@ -10,6 +10,15 @@
     "info": "Nous trouver",
     "reserve": "Réserver"
   },
+  "ticker": {
+    "label": "Annonces",
+    "items": [
+      "Horaires · Déjeuner 12h00–14h30 · Dîner 19h00–22h00",
+      "Fermé le mercredi",
+      "Réservez votre table · 0722 331684",
+      "Nouveautés & soirées spéciales — bientôt ici"
+    ]
+  },
   "hero": {
     "eyebrow": "Pizzeria · Cuisine des Marches · Fermignano",
     "titlePre": "Ristorante da",

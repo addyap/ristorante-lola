@@ -229,7 +229,7 @@ export default function HeroBrace({
       <div className="brace-vignette absolute inset-0" />
 
       {/* Content */}
-      <div className="brace-content relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-5">
+      <div className="brace-content relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-5 pt-[104px] sm:pt-[108px]">
         <p className="brace-kicker text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-amber-200/80 sm:text-sm sm:tracking-[0.32em]">
           {eyebrow}
         </p>
@@ -292,7 +292,7 @@ export default function HeroBrace({
       </div>
 
       {/* Scroll cue */}
-      <div className="brace-scrollcue absolute inset-x-0 bottom-6 z-10 flex flex-col items-center gap-2 text-[0.7rem] uppercase tracking-[0.3em] text-cream/60">
+      <div className="brace-scrollcue absolute inset-x-0 bottom-6 z-10 hidden flex-col items-center gap-2 text-[0.7rem] uppercase tracking-[0.3em] text-cream/60 sm:flex">
         <span>{scrollCue}</span>
         <span className="brace-scrollcue-line" aria-hidden="true" />
       </div>

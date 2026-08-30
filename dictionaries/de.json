@@ -10,6 +10,15 @@
     "info": "Anfahrt",
     "reserve": "Reservieren"
   },
+  "ticker": {
+    "label": "Ankündigungen",
+    "items": [
+      "Öffnungszeiten · Mittag 12:00–14:30 · Abend 19:00–22:00",
+      "Mittwochs geschlossen",
+      "Tisch reservieren · 0722 331684",
+      "Neuigkeiten & besondere Abende — bald hier"
+    ]
+  },
   "hero": {
     "eyebrow": "Pizzeria · Marken-Küche · Fermignano",
     "titlePre": "Ristorante da",
