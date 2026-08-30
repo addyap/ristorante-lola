@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "da Lola — Restaurant Pizzeria à Fermignano",
+    "description": "Un restaurant-pizzeria typique des Marches à Fermignano : pâtes maison, viande grillée à la braise et pizzas au feu de bois, dans une atmosphère simple et familiale."
+  },
+  "nav": {
+    "specialties": "Spécialités",
+    "gallery": "Galerie",
+    "about": "Le lieu",
+    "info": "Nous trouver",
+    "reserve": "Réserver"
+  },
+  "hero": {
+    "eyebrow": "Restaurant · Pizzeria · Fermignano",
+    "titlePre": "da",
+    "titleMain": "Lola",
+    "subtitle": "La cuisine des Marches — pâtes maison et viande grillée à la braise, avec un large choix de pizzas au feu de bois.",
+    "ctaMenu": "Nos spécialités",
+    "ctaFind": "Comment nous trouver"
+  },
+  "intro": {
+    "title": "Un véritable restaurant-pizzeria du coin",
+    "body": "Chez da Lola, vous dégustez les plats typiques de la cuisine des Marches dans une atmosphère simple et familiale. Toutes nos pâtes sont faites maison et notre viande est cuite à la braise. S'y ajoutent nos spécialités grillées et un large choix de pizzas cuites au feu de bois."
+  },
+  "specialties": {
+    "title": "Nos spécialités",
+    "subtitle": "Trois choses bien faites, chaque jour.",
+    "items": [
+      {
+        "name": "Pâtes maison",
+        "desc": "Tagliatelles, raviolis et les entrées de la tradition des Marches, étalés à la main chaque jour — du ragù mijoté à la truffe de saison."
+      },
+      {
+        "name": "Viande à la braise",
+        "desc": "Grillades et spécialités cuites sur la braise vive, de la Fiorentina aux pièces du jour."
+      },
+      {
+        "name": "Pizza au feu de bois",
+        "desc": "Un large choix de pizzas cuites au feu de bois, d'une pâte soignée à une croûte croustillante et aérée."
+      }
+    ]
+  },
+  "features": {
+    "title": "Bon à savoir",
+    "items": [
+      "Options végétariennes",
+      "Déjeuner, dîner et boissons",
+      "Service à table",
+      "Boulodrome attenant",
+      "Aire de jeux à l'extérieur"
+    ]
+  },
+  "gallery": {
+    "title": "De notre cuisine",
+    "subtitle": "Un aperçu de ce que vous trouverez à table."
+  },
+  "about": {
+    "title": "Un lieu pour petits et grands",
+    "body": "Le boulodrome attenant et l'aire de jeux juste devant le restaurant offrent une belle détente pour petits et grands, au déjeuner comme au dîner. Une atmosphère simple et familiale où prendre son temps, d'un plat à l'autre."
+  },
+  "info": {
+    "title": "Nous trouver",
+    "addressLabel": "Adresse",
+    "address": "Via S. Caterina da Siena, 16\n61033 Fermignano (PU) — Italie",
+    "hoursLabel": "Horaires",
+    "hoursValue": "Déjeuner et dîner — horaires à venir",
+    "phoneLabel": "Téléphone",
+    "phoneValue": "À renseigner",
+    "mapCta": "Ouvrir dans le plan"
+  },
+  "footer": {
+    "tagline": "Restaurant · Pizzeria à Fermignano",
+    "rights": "Tous droits réservés."
+  }
+}

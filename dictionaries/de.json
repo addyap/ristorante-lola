@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "da Lola — Restaurant & Pizzeria in Fermignano",
+    "description": "Ein typisches Restaurant und eine Pizzeria der Marken-Küche in Fermignano: hausgemachte Pasta, Fleisch vom Holzkohlegrill und Pizza aus dem Holzofen, in schlichter, familiärer Atmosphäre."
+  },
+  "nav": {
+    "specialties": "Spezialitäten",
+    "gallery": "Galerie",
+    "about": "Das Lokal",
+    "info": "Anfahrt",
+    "reserve": "Reservieren"
+  },
+  "hero": {
+    "eyebrow": "Restaurant · Pizzeria · Fermignano",
+    "titlePre": "da",
+    "titleMain": "Lola",
+    "subtitle": "Die Küche der Marken — hausgemachte Pasta und Fleisch vom Holzkohlegrill, dazu eine reiche Auswahl an Pizzen aus dem Holzofen.",
+    "ctaMenu": "Unsere Spezialitäten",
+    "ctaFind": "So finden Sie uns"
+  },
+  "intro": {
+    "title": "Ein echtes Restaurant & eine Pizzeria vor Ort",
+    "body": "Bei da Lola genießen Sie die typischen Gerichte der Marken-Küche in schlichter, familiärer Atmosphäre. Unsere gesamte Pasta ist hausgemacht und unser Fleisch wird über der Glut gegart. Dazu kommen unsere Grillspezialitäten und eine reiche Auswahl an Pizzen aus dem Holzofen."
+  },
+  "specialties": {
+    "title": "Unsere Spezialitäten",
+    "subtitle": "Drei Dinge, jeden Tag richtig gemacht.",
+    "items": [
+      {
+        "name": "Hausgemachte Pasta",
+        "desc": "Tagliatelle, Ravioli und die Vorspeisen der Marken-Tradition, täglich von Hand ausgerollt — vom langsam geschmorten Ragù bis zum Trüffel der Saison."
+      },
+      {
+        "name": "Fleisch vom Grill",
+        "desc": "Steaks und Grillspezialitäten über glühender Kohle gegart, von der Fiorentina bis zu den Stücken des Tages."
+      },
+      {
+        "name": "Pizza aus dem Holzofen",
+        "desc": "Eine reiche Auswahl an Pizzen aus dem Holzofen, vom sorgfältig geführten Teig bis zum knusprigen, luftigen Rand."
+      }
+    ]
+  },
+  "features": {
+    "title": "Gut zu wissen",
+    "items": [
+      "Vegetarische Optionen",
+      "Mittag, Abend und Getränke",
+      "Bedienung am Tisch",
+      "Boccia-Bahn nebenan",
+      "Spielplatz im Freien"
+    ]
+  },
+  "gallery": {
+    "title": "Aus unserer Küche",
+    "subtitle": "Ein Vorgeschmack auf das, was Sie auf dem Tisch erwartet."
+  },
+  "about": {
+    "title": "Ein Ort für Groß und Klein",
+    "body": "Die Boccia-Bahn nebenan und der Spielplatz direkt vor dem Restaurant sorgen für gute Unterhaltung für Groß und Klein, mittags wie abends. Eine schlichte, familiäre Atmosphäre, in der man sich von Gang zu Gang Zeit lassen kann."
+  },
+  "info": {
+    "title": "Anfahrt",
+    "addressLabel": "Adresse",
+    "address": "Via S. Caterina da Siena, 16\n61033 Fermignano (PU) — Italien",
+    "hoursLabel": "Öffnungszeiten",
+    "hoursValue": "Mittag und Abend — Zeiten folgen in Kürze",
+    "phoneLabel": "Telefon",
+    "phoneValue": "Wird ergänzt",
+    "mapCta": "In Karte öffnen"
+  },
+  "footer": {
+    "tagline": "Restaurant · Pizzeria in Fermignano",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

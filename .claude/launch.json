@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "lola-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/antonyaddy/Desktop/ristorante-lola", "run", "dev"],
+      "port": 3000
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "da Lola — Restaurant & Pizzeria in Fermignano",
+    "description": "A traditional restaurant-pizzeria serving the cuisine of Le Marche in Fermignano: homemade pasta, char-grilled meat and wood-fired pizza in a simple, family atmosphere."
+  },
+  "nav": {
+    "specialties": "Specialities",
+    "gallery": "Gallery",
+    "about": "The place",
+    "info": "Find us",
+    "reserve": "Book"
+  },
+  "hero": {
+    "eyebrow": "Restaurant · Pizzeria · Fermignano",
+    "titlePre": "da",
+    "titleMain": "Lola",
+    "subtitle": "The cuisine of Le Marche — homemade pasta and char-grilled meat, with a generous choice of wood-fired pizzas.",
+    "ctaMenu": "Our specialities",
+    "ctaFind": "How to find us"
+  },
+  "intro": {
+    "title": "A true local restaurant & pizzeria",
+    "body": "At da Lola you can enjoy the traditional dishes of Le Marche in a simple, family atmosphere. All our pasta is made in house and our meat is cooked over the coals. Alongside them you'll find our char-grilled specialities and a generous choice of pizzas baked in the wood-fired oven."
+  },
+  "specialties": {
+    "title": "Our specialities",
+    "subtitle": "Three things done properly, every day.",
+    "items": [
+      {
+        "name": "Homemade pasta",
+        "desc": "Tagliatelle, ravioli and the first courses of the Marche tradition, rolled by hand each day — from slow ragù to seasonal truffle."
+      },
+      {
+        "name": "Char-grilled meat",
+        "desc": "Steaks and grilled specialities cooked over live coals, from the Fiorentina to the cuts of the day."
+      },
+      {
+        "name": "Wood-fired pizza",
+        "desc": "A generous choice of pizzas baked in the wood-fired oven, from a carefully raised dough to a crisp, airy crust."
+      }
+    ]
+  },
+  "features": {
+    "title": "Good to know",
+    "items": [
+      "Vegetarian options",
+      "Lunch, dinner and drinks",
+      "Table service",
+      "Bowls green next door",
+      "Playground outside"
+    ]
+  },
+  "gallery": {
+    "title": "From our kitchen",
+    "subtitle": "A taste of what you'll find on the table."
+  },
+  "about": {
+    "title": "A place for grown-ups and children alike",
+    "body": "The bowls green next door and the playground just outside the restaurant make for great fun for grown-ups and children alike, at both lunch and dinner. A simple, family atmosphere where you can take your time between one dish and the next."
+  },
+  "info": {
+    "title": "Find us",
+    "addressLabel": "Address",
+    "address": "Via S. Caterina da Siena, 16\n61033 Fermignano (PU) — Italy",
+    "hoursLabel": "Opening hours",
+    "hoursValue": "Lunch and dinner — hours coming soon",
+    "phoneLabel": "Phone",
+    "phoneValue": "To be added",
+    "mapCta": "Open in maps"
+  },
+  "footer": {
+    "tagline": "Restaurant · Pizzeria in Fermignano",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: theme("colors.cream.DEFAULT");
+  color: theme("colors.charcoal");
+}
+
+/* Thin tricolore rule used as a section divider */
+.tricolore {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    theme("colors.basil.DEFAULT") 0 33.33%,
+    #ffffff 33.33% 66.66%,
+    theme("colors.tomato.DEFAULT") 66.66% 100%
+  );
+}

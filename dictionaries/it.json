@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "da Lola — Ristorante Pizzeria a Fermignano",
+    "description": "Ristorante-pizzeria tipico della cucina marchigiana a Fermignano: pasta fatta in casa, carne cotta alla brace e pizze in forno a legna, in un'atmosfera semplice e familiare."
+  },
+  "nav": {
+    "specialties": "Specialità",
+    "gallery": "Galleria",
+    "about": "Il locale",
+    "info": "Dove siamo",
+    "reserve": "Prenota"
+  },
+  "hero": {
+    "eyebrow": "Ristorante · Pizzeria · Fermignano",
+    "titlePre": "da",
+    "titleMain": "Lola",
+    "subtitle": "Cucina marchigiana, pasta fatta in casa e carne alla brace, con una ricca scelta di pizze cotte nel forno a legna.",
+    "ctaMenu": "Le nostre specialità",
+    "ctaFind": "Come raggiungerci"
+  },
+  "intro": {
+    "title": "Un tipico ristorante-pizzeria del posto",
+    "body": "Da Lola potrete gustare i piatti tipici della cucina marchigiana avvolti da un'atmosfera semplice e familiare. Tutta la pasta è fatta in casa e la carne è cotta alla brace. Vi attendono inoltre le nostre specialità di carne alla griglia e una ricca scelta di pizze cotte in forno a legna."
+  },
+  "specialties": {
+    "title": "Le nostre specialità",
+    "subtitle": "Tre cose fatte come si deve, ogni giorno.",
+    "items": [
+      {
+        "name": "Pasta fatta in casa",
+        "desc": "Tagliatelle, ravioli e i primi della tradizione marchigiana, tirati a mano ogni giorno — dal ragù al tartufo di stagione."
+      },
+      {
+        "name": "Carne alla brace",
+        "desc": "Bistecche e specialità alla griglia cotte sulla brace viva, dalla fiorentina ai tagli del giorno."
+      },
+      {
+        "name": "Pizza in forno a legna",
+        "desc": "Una ricca scelta di pizze cotte nel forno a legna, dall'impasto curato al cornicione fragrante."
+      }
+    ]
+  },
+  "features": {
+    "title": "Buono a sapersi",
+    "items": [
+      "Opzioni vegetariane",
+      "Pranzo, cena e bevande",
+      "Servizio al tavolo",
+      "Bocciodromo adiacente",
+      "Parco giochi all'esterno"
+    ]
+  },
+  "gallery": {
+    "title": "Dalla nostra cucina",
+    "subtitle": "Qualche assaggio di quello che troverete in tavola."
+  },
+  "about": {
+    "title": "Un posto per grandi e piccini",
+    "body": "Il bocciodromo adiacente e il parco giochi appena fuori dal ristorante rappresentano un ottimo svago per grandi e piccini, sia a pranzo che a cena. Un'atmosfera semplice e familiare dove fermarsi con calma, tra un piatto e l'altro."
+  },
+  "info": {
+    "title": "Dove siamo",
+    "addressLabel": "Indirizzo",
+    "address": "Via S. Caterina da Siena, 16\n61033 Fermignano (PU) — Italia",
+    "hoursLabel": "Orari",
+    "hoursValue": "Pranzo e cena — orari in aggiornamento",
+    "phoneLabel": "Telefono",
+    "phoneValue": "Da inserire",
+    "mapCta": "Apri nella mappa"
+  },
+  "footer": {
+    "tagline": "Ristorante · Pizzeria a Fermignano",
+    "rights": "Tutti i diritti riservati."
+  }
+}
