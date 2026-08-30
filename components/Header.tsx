@@ -19,7 +19,9 @@ export default function Header({
   const [solid, setSolid] = useState(false);
   useEffect(() => {
     const onScroll = () => {
-      setSolid(window.scrollY > window.innerHeight * 0.6);
+      // Solidify as soon as the visitor starts scrolling, so the bar reads
+      // as a persistent sticky menu (transparent only at the very top).
+      setSolid(window.scrollY > 24);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });

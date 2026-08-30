@@ -200,7 +200,7 @@ export default function HeroBrace({
       <div className="brace-photo absolute inset-0">
         <div className="brace-slide brace-slide-1 absolute inset-0">
           <Image
-            src="/photos/12-carne-alla-brace.jpg"
+            src="/photos/05-pizze-caprese-forno-a-legna.jpg"
             alt=""
             fill
             priority
@@ -210,7 +210,7 @@ export default function HeroBrace({
         </div>
         <div className="brace-slide brace-slide-2 absolute inset-0">
           <Image
-            src="/photos/05-pizze-caprese-forno-a-legna.jpg"
+            src="/photos/12-carne-alla-brace.jpg"
             alt=""
             fill
             sizes="100vw"
