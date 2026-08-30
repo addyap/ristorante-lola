@@ -63,7 +63,7 @@ export default function Header({
         >
           <Image
             src="/logo.jpg"
-            alt="da Lola"
+            alt="Ristorante da Lola"
             width={48}
             height={48}
             className={

@@ -191,7 +191,7 @@ export default function Home({ params }: { params: { lang: string } }) {
                 {dict.people.body}
               </p>
               <p className="mt-6 font-serif text-2xl text-basil">
-                — da <span className="text-tomato">Lola</span>
+                — Ristorante da <span className="text-tomato">Lola</span>
               </p>
             </div>
           </div>
@@ -298,7 +298,7 @@ export default function Home({ params }: { params: { lang: string } }) {
       <footer className="bg-charcoal text-cream/80">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-5 py-10 text-center">
           <span className="font-serif text-2xl text-cream">
-            da <span className="text-tomato">Lola</span>
+            Ristorante da <span className="text-tomato">Lola</span>
           </span>
           <p className="text-sm">{dict.footer.tagline}</p>
           <a
