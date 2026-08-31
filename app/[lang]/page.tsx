@@ -7,6 +7,7 @@ import { gallery, specialtyImages } from "@/lib/gallery";
 import Header from "@/components/Header";
 import HeroBrace from "@/components/HeroBrace";
 import MenuSection from "@/components/MenuSection";
+import HashScroll from "@/components/HashScroll";
 
 const MAP_QUERY =
   "https://www.google.com/maps/search/?api=1&query=Via+S.+Caterina+da+Siena+16+61033+Fermignano";
@@ -29,6 +30,7 @@ export default function Home({ params }: { params: { lang: string } }) {
 
   return (
     <>
+      <HashScroll />
       <Header lang={lang} dict={dict} />
 
       <main>
