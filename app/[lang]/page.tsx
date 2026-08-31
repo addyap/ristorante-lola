@@ -6,6 +6,7 @@ import { getDictionary } from "@/lib/dictionaries";
 import { gallery, specialtyImages } from "@/lib/gallery";
 import Header from "@/components/Header";
 import HeroBrace from "@/components/HeroBrace";
+import MenuSection from "@/components/MenuSection";
 
 const MAP_QUERY =
   "https://www.google.com/maps/search/?api=1&query=Via+S.+Caterina+da+Siena+16+61033+Fermignano";
@@ -108,6 +109,9 @@ export default function Home({ params }: { params: { lang: string } }) {
             </div>
           </div>
         </section>
+
+        {/* Menu */}
+        <MenuSection dict={dict} />
 
         {/* Gallery */}
         <section id="gallery" className="scroll-mt-28 bg-cream">

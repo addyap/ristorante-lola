@@ -39,6 +39,7 @@ export default function Header({
 
   const links = [
     { href: "#specialties", label: dict.nav.specialties },
+    { href: "#menu", label: dict.nav.menu },
     { href: "#gallery", label: dict.nav.gallery },
     { href: "#about", label: dict.nav.about },
     { href: "#info", label: dict.nav.info },
