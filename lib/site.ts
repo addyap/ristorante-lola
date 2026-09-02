@@ -1,8 +1,8 @@
 import type { Locale } from "./i18n";
 
-// Canonical origin. Update this to the custom domain once it's connected.
-export const SITE_URL =
-  "https://ristorante-lola-antony-addy-s-projects.vercel.app";
+// Canonical origin. The apex (ristorantedalola.it) 308-redirects to www,
+// so www is the canonical host.
+export const SITE_URL = "https://www.ristorantedalola.it";
 
 export const SITE_NAME = "Ristorante da Lola";
 
