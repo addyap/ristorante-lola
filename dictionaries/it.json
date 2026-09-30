@@ -71,6 +71,7 @@
       "bevande": "Bevande"
     },
     "categoryNotes": {
+      "pizze": "Pizza gigante da € 13,00 a € 20,00",
       "hamburger": "Panino di nostra produzione cotto nel forno a legna · serviti con patatine e bibita piccola"
     },
     "addons": {
@@ -175,7 +176,7 @@
       "acqua075": { "name": "Acqua 0,75 L", "desc": "" },
       "acqua050": { "name": "Acqua 0,50 L", "desc": "" },
       "bibiteLattina": { "name": "Bibite in lattina 0,33 L", "desc": "" },
-      "vinoFrizzante": { "name": "Vino bianco frizzante", "desc": "Formati 0,25 · 0,50 · 1 L" },
+      "vinoFrizzante": { "name": "Vino bianco frizzante", "desc": "" },
       "vinoCasa": { "name": "Vino della casa, bianco o rosso", "desc": "" },
       "birraSpina": { "name": "Birra alla spina", "desc": "" },
       "forstKronen": { "name": "Birra in bottiglia Forst Kronen 0,66 L", "desc": "" },

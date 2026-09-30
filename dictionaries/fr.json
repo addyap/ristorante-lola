@@ -71,6 +71,7 @@
       "bevande": "Boissons"
     },
     "categoryNotes": {
+      "pizze": "Pizza géante de € 13,00 à € 20,00",
       "hamburger": "Pain de notre production cuit au four à bois · servis avec frites et une petite boisson"
     },
     "addons": {
@@ -175,7 +176,7 @@
       "acqua075": { "name": "Eau 0,75 L", "desc": "" },
       "acqua050": { "name": "Eau 0,50 L", "desc": "" },
       "bibiteLattina": { "name": "Boissons en canette 0,33 L", "desc": "" },
-      "vinoFrizzante": { "name": "Vin blanc pétillant", "desc": "Formats 0,25 · 0,50 · 1 L" },
+      "vinoFrizzante": { "name": "Vin blanc pétillant", "desc": "" },
       "vinoCasa": { "name": "Vin de la maison, blanc ou rouge", "desc": "" },
       "birraSpina": { "name": "Bière pression", "desc": "" },
       "forstKronen": { "name": "Bière en bouteille — Forst Kronen 0,66 L", "desc": "" },

@@ -71,6 +71,7 @@
       "bevande": "Drinks"
     },
     "categoryNotes": {
+      "pizze": "Giant pizza from € 13,00 to € 20,00",
       "hamburger": "House-made bun baked in the wood-fired oven · served with fries and a small drink"
     },
     "addons": {
@@ -175,7 +176,7 @@
       "acqua075": { "name": "Water 0.75 L", "desc": "" },
       "acqua050": { "name": "Water 0.50 L", "desc": "" },
       "bibiteLattina": { "name": "Canned soft drinks 0.33 L", "desc": "" },
-      "vinoFrizzante": { "name": "Sparkling white wine", "desc": "Sizes 0.25 · 0.50 · 1 L" },
+      "vinoFrizzante": { "name": "Sparkling white wine", "desc": "" },
       "vinoCasa": { "name": "House wine, white or red", "desc": "" },
       "birraSpina": { "name": "Draught beer", "desc": "" },
       "forstKronen": { "name": "Bottled beer — Forst Kronen 0.66 L", "desc": "" },

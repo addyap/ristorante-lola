@@ -71,6 +71,7 @@
       "bevande": "Getränke"
     },
     "categoryNotes": {
+      "pizze": "Riesenpizza von € 13,00 bis € 20,00",
       "hamburger": "Hausgemachtes Brötchen aus dem Holzofen · serviert mit Pommes und einem kleinen Getränk"
     },
     "addons": {
@@ -175,7 +176,7 @@
       "acqua075": { "name": "Wasser 0,75 L", "desc": "" },
       "acqua050": { "name": "Wasser 0,50 L", "desc": "" },
       "bibiteLattina": { "name": "Erfrischungsgetränke in Dosen 0,33 L", "desc": "" },
-      "vinoFrizzante": { "name": "Weißer Perlwein", "desc": "Größen 0,25 · 0,50 · 1 L" },
+      "vinoFrizzante": { "name": "Weißer Perlwein", "desc": "" },
       "vinoCasa": { "name": "Hauswein, weiß oder rot", "desc": "" },
       "birraSpina": { "name": "Bier vom Fass", "desc": "" },
       "forstKronen": { "name": "Flaschenbier — Forst Kronen 0,66 L", "desc": "" },
