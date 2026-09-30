@@ -8,6 +8,7 @@
     "menu": "Menù",
     "gallery": "Galleria",
     "about": "Il locale",
+    "faq": "FAQ",
     "info": "Dove siamo",
     "reserve": "Prenota"
   },
@@ -206,6 +207,40 @@
     "title": "Le mani dietro da Lola",
     "body": "Dietro ogni piatto c'è una squadra che impasta la pasta a mano ogni mattina e tiene viva la brace fino a sera. Da Lola non è soltanto un'insegna: è la nostra cucina, aperta a voi come si accoglie qualcuno a casa.",
     "caption": "In cucina, tra impasti e brace."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "subtitle": "Tutto quello che vi serve sapere prima di passare da Lola.",
+    "items": [
+      {
+        "q": "Quando siete aperti?",
+        "a": "Siamo aperti a pranzo dalle 12:00 alle 14:30 e a cena dalle 19:00 alle 22:00. Il mercoledì siamo chiusi."
+      },
+      {
+        "q": "Come posso prenotare un tavolo?",
+        "a": "Potete chiamarci allo 0722 331684 o al 347 762 1359, oppure scriverci su WhatsApp. Vi consigliamo di prenotare per il fine settimana e le serate speciali."
+      },
+      {
+        "q": "Avete opzioni vegetariane?",
+        "a": "Sì. Trovate diverse pizze vegetariane, contorni di verdure e insalatone, oltre a primi di pasta fatta in casa senza carne."
+      },
+      {
+        "q": "Le pizze sono cotte nel forno a legna?",
+        "a": "Sì, tutte le nostre pizze sono cotte nel forno a legna. La pasta è fatta in casa e la carne è cotta alla brace."
+      },
+      {
+        "q": "È un posto adatto ai bambini?",
+        "a": "Assolutamente. Accanto al ristorante ci sono un parco giochi all'esterno e un bocciodromo: un ottimo svago per grandi e piccini, sia a pranzo che a cena."
+      },
+      {
+        "q": "Serve prenotare per la Fiorentina?",
+        "a": "Sì, la Fiorentina è disponibile solo su prenotazione. Chiamateci in anticipo così la prepariamo come si deve."
+      },
+      {
+        "q": "Dove vi trovate?",
+        "a": "Siamo in Via S. Caterina da Siena 16, a Fermignano (PU), a due passi dal centro. Trovate la mappa e le indicazioni nella sezione “Dove siamo”."
+      }
+    ]
   },
   "info": {
     "title": "Dove siamo",

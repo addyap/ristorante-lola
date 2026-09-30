@@ -42,6 +42,7 @@ export default function Header({
     { href: "#menu", label: dict.nav.menu },
     { href: "#gallery", label: dict.nav.gallery },
     { href: "#about", label: dict.nav.about },
+    { href: "#faq", label: dict.nav.faq },
     { href: "#info", label: dict.nav.info },
   ];
 

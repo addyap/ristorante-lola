@@ -8,6 +8,7 @@
     "menu": "Menu",
     "gallery": "Gallery",
     "about": "The place",
+    "faq": "FAQ",
     "info": "Find us",
     "reserve": "Book"
   },
@@ -206,6 +207,40 @@
     "title": "The people behind da Lola",
     "body": "Behind every plate is a team that rolls the pasta by hand each morning and keeps the coals alive until late. da Lola isn't just a sign over the door — it's our kitchen, opened to you the way you'd welcome someone home.",
     "caption": "In the kitchen, between dough and embers."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know before you visit da Lola.",
+    "items": [
+      {
+        "q": "When are you open?",
+        "a": "We're open for lunch from 12:00 to 14:30 and for dinner from 19:00 to 22:00. We're closed on Wednesdays."
+      },
+      {
+        "q": "How can I book a table?",
+        "a": "Call us on 0722 331684 or 347 762 1359, or message us on WhatsApp. We recommend booking for weekends and special evenings."
+      },
+      {
+        "q": "Do you have vegetarian options?",
+        "a": "Yes. There are several vegetarian pizzas, vegetable sides and large salads, plus homemade pasta dishes without meat."
+      },
+      {
+        "q": "Are the pizzas wood-fired?",
+        "a": "Yes, all our pizzas are baked in the wood-fired oven. Our pasta is homemade and our meat is grilled over embers."
+      },
+      {
+        "q": "Is it a good place for children?",
+        "a": "Absolutely. There's an outdoor playground and a bocce court right next to the restaurant — great fun for grown-ups and children alike, at both lunch and dinner."
+      },
+      {
+        "q": "Do I need to pre-order the Fiorentina steak?",
+        "a": "Yes, the Fiorentina is available by reservation only. Call ahead so we can prepare it properly."
+      },
+      {
+        "q": "Where are you located?",
+        "a": "We're at Via S. Caterina da Siena 16 in Fermignano (PU), just steps from the centre. You'll find the map and directions in the “Find us” section."
+      }
+    ]
   },
   "info": {
     "title": "Find us",

@@ -8,6 +8,7 @@
     "menu": "Carte",
     "gallery": "Galerie",
     "about": "Le lieu",
+    "faq": "FAQ",
     "info": "Nous trouver",
     "reserve": "Réserver"
   },
@@ -206,6 +207,40 @@
     "title": "Les mains derrière da Lola",
     "body": "Derrière chaque plat, une équipe qui pétrit les pâtes à la main chaque matin et entretient la braise jusqu'au soir. da Lola n'est pas qu'une enseigne : c'est notre cuisine, ouverte comme on accueille quelqu'un chez soi.",
     "caption": "En cuisine, entre pâtes et braise."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce qu'il faut savoir avant de venir chez Lola.",
+    "items": [
+      {
+        "q": "Quels sont vos horaires ?",
+        "a": "Nous sommes ouverts le midi de 12h00 à 14h30 et le soir de 19h00 à 22h00. Nous sommes fermés le mercredi."
+      },
+      {
+        "q": "Comment réserver une table ?",
+        "a": "Appelez-nous au 0722 331684 ou au 347 762 1359, ou écrivez-nous sur WhatsApp. Nous conseillons de réserver le week-end et lors des soirées spéciales."
+      },
+      {
+        "q": "Proposez-vous des options végétariennes ?",
+        "a": "Oui. Vous trouverez plusieurs pizzas végétariennes, des accompagnements de légumes et de grandes salades, ainsi que des pâtes maison sans viande."
+      },
+      {
+        "q": "Les pizzas sont-elles cuites au four à bois ?",
+        "a": "Oui, toutes nos pizzas sont cuites au four à bois. Nos pâtes sont faites maison et la viande est cuite à la braise."
+      },
+      {
+        "q": "Est-ce un endroit adapté aux enfants ?",
+        "a": "Tout à fait. Une aire de jeux extérieure et un boulodrome se trouvent juste à côté du restaurant — un vrai plaisir pour petits et grands, midi et soir."
+      },
+      {
+        "q": "Faut-il commander la Fiorentina à l'avance ?",
+        "a": "Oui, la Fiorentina est disponible uniquement sur réservation. Appelez-nous à l'avance pour que nous la préparions comme il se doit."
+      },
+      {
+        "q": "Où êtes-vous situés ?",
+        "a": "Nous sommes au Via S. Caterina da Siena 16, à Fermignano (PU), à deux pas du centre. La carte et l'itinéraire se trouvent dans la section « Nous trouver »."
+      }
+    ]
   },
   "info": {
     "title": "Nous trouver",

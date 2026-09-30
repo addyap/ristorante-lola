@@ -8,6 +8,7 @@
     "menu": "Speisekarte",
     "gallery": "Galerie",
     "about": "Das Lokal",
+    "faq": "FAQ",
     "info": "Anfahrt",
     "reserve": "Reservieren"
   },
@@ -206,6 +207,40 @@
     "title": "Die Menschen hinter da Lola",
     "body": "Hinter jedem Gericht steht ein Team, das die Pasta jeden Morgen von Hand ausrollt und die Glut bis zum Abend hält. da Lola ist nicht nur ein Schild über der Tür — es ist unsere Küche, geöffnet, wie man Gäste zu Hause empfängt.",
     "caption": "In der Küche, zwischen Teig und Glut."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "subtitle": "Alles, was Sie vor Ihrem Besuch bei Lola wissen müssen.",
+    "items": [
+      {
+        "q": "Wann haben Sie geöffnet?",
+        "a": "Wir sind mittags von 12:00 bis 14:30 Uhr und abends von 19:00 bis 22:00 Uhr geöffnet. Mittwochs ist Ruhetag."
+      },
+      {
+        "q": "Wie kann ich einen Tisch reservieren?",
+        "a": "Rufen Sie uns unter 0722 331684 oder 347 762 1359 an oder schreiben Sie uns über WhatsApp. Für Wochenenden und besondere Abende empfehlen wir eine Reservierung."
+      },
+      {
+        "q": "Gibt es vegetarische Optionen?",
+        "a": "Ja. Es gibt mehrere vegetarische Pizzen, Gemüsebeilagen und große Salate sowie hausgemachte Pastagerichte ohne Fleisch."
+      },
+      {
+        "q": "Werden die Pizzen im Holzofen gebacken?",
+        "a": "Ja, alle unsere Pizzen werden im Holzofen gebacken. Unsere Pasta ist hausgemacht und das Fleisch wird über der Glut gegrillt."
+      },
+      {
+        "q": "Ist das Restaurant für Kinder geeignet?",
+        "a": "Auf jeden Fall. Direkt neben dem Restaurant gibt es einen Spielplatz im Freien und eine Boccia-Bahn – ein toller Zeitvertreib für Groß und Klein, mittags wie abends."
+      },
+      {
+        "q": "Muss man die Fiorentina vorbestellen?",
+        "a": "Ja, die Fiorentina gibt es nur auf Vorbestellung. Rufen Sie uns vorab an, damit wir sie richtig zubereiten können."
+      },
+      {
+        "q": "Wo befinden Sie sich?",
+        "a": "Wir sind in der Via S. Caterina da Siena 16 in Fermignano (PU), nur wenige Schritte vom Zentrum entfernt. Karte und Wegbeschreibung finden Sie im Abschnitt „Anfahrt“."
+      }
+    ]
   },
   "info": {
     "title": "Anfahrt",
