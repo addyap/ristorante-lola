@@ -160,6 +160,41 @@ export default function Home({ params }: { params: { lang: string } }) {
           </div>
         </section>
 
+        <section className="bg-cream-dark/40">
+          <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
+            <h2 className="font-serif text-3xl text-charcoal sm:text-4xl">{dict.kitchen.title}</h2>
+            <p className="mt-3 max-w-2xl text-charcoal/75">{dict.kitchen.body}</p>
+            <div className="mt-8 grid gap-5 md:grid-cols-2">
+              <figure>
+                <video controls playsInline preload="none" poster="/photos/scampi-cucina-02.jpg"
+                  aria-label={dict.kitchen.video} className="aspect-[4/3] w-full rounded-2xl bg-charcoal object-contain">
+                  <source src="/videos/scampi-alla-brace.mp4" type="video/mp4" />
+                  <a href="/videos/scampi-alla-brace.mp4">{dict.kitchen.video}</a>
+                </video>
+                <figcaption className="mt-3 text-sm text-charcoal/70">{dict.kitchen.video}</figcaption>
+              </figure>
+              <figure>
+                <Image src="/photos/scampi-cucina-07.jpg" alt={dict.kitchen.team} width={1600} height={1200}
+                  sizes="(max-width: 768px) 100vw, 50vw" className="aspect-[4/3] w-full rounded-2xl object-cover" />
+                <figcaption className="mt-3 text-sm text-charcoal/70">{dict.kitchen.team}</figcaption>
+              </figure>
+            </div>
+            <details className="mt-6">
+              <summary className="cursor-pointer py-3 font-medium text-basil">{dict.kitchen.more}</summary>
+              <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                {[1, 2, 3, 4, 5, 6, 8].map((n) => (
+                  <a key={n} href={`/photos/scampi-cucina-${String(n).padStart(2, "0")}.jpg`} target="_blank" rel="noopener noreferrer">
+                    <Image src={`/photos/scampi-cucina-${String(n).padStart(2, "0")}.jpg`}
+                      alt={n === 1 ? dict.kitchen.team : [2, 4, 6].includes(n) ? dict.kitchen.grill : dict.kitchen.platter}
+                      width={1600} height={1200} sizes="(max-width: 640px) 50vw, 33vw"
+                      className="aspect-[4/3] w-full rounded-xl object-cover" />
+                  </a>
+                ))}
+              </div>
+            </details>
+          </div>
+        </section>
+
         {/* About */}
         <section id="about" className="scroll-mt-28 bg-basil text-cream">
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:py-20 md:grid-cols-2">

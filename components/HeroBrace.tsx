@@ -37,6 +37,17 @@ export default function HeroBrace({
   const rootRef = useRef<HTMLElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
+  // The hero already offers WhatsApp; avoid a duplicate floating action over it.
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      root.dataset.inView = String(entry.isIntersecting);
+    });
+    observer.observe(root);
+    return () => observer.disconnect();
+  }, []);
+
   // Firelight tracking + parallax + rising embers, all on one rAF loop.
   // (The cinematic entrance is pure CSS, so the hero is never blank even if
   // this effect never runs.)
@@ -48,6 +59,8 @@ export default function HeroBrace({
     const reduce = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
+    if (reduce) return;
+
     const coarse = window.matchMedia("(pointer: coarse)").matches;
 
     // Light position, 0..1 in the hero box. Idle rest point: low-centre,
@@ -154,7 +167,24 @@ export default function HeroBrace({
 
       raf = requestAnimationFrame(render);
     };
-    raf = requestAnimationFrame(render);
+    const observer = new IntersectionObserver(([entry]) => {
+      running = entry.isIntersecting && !document.hidden;
+      cancelAnimationFrame(raf);
+      if (running) {
+        last = performance.now();
+        raf = requestAnimationFrame(render);
+      }
+    });
+    observer.observe(root);
+    const onVisibility = () => {
+      running = !document.hidden && root.getBoundingClientRect().bottom > 0;
+      cancelAnimationFrame(raf);
+      if (running) {
+        last = performance.now();
+        raf = requestAnimationFrame(render);
+      }
+    };
+    document.addEventListener("visibilitychange", onVisibility);
 
     // ---- Pointer + scroll wiring ----
     const onMove = (ev: PointerEvent) => {
@@ -179,6 +209,8 @@ export default function HeroBrace({
     onScroll();
 
     return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", onVisibility);
       running = false;
       cancelAnimationFrame(raf);
       root.removeEventListener("pointermove", onMove);
@@ -193,7 +225,7 @@ export default function HeroBrace({
   return (
     <section
       ref={rootRef}
-      className="brace-hero relative h-[84svh] min-h-[600px] max-h-[760px] w-full overflow-hidden bg-[#0b0908] text-cream sm:h-[66svh] sm:max-h-[700px]"
+      className="brace-hero relative min-h-[min(760px,100svh)] w-full overflow-hidden bg-[#0b0908] text-cream sm:min-h-[680px]"
     >
       {/* Layer 1 — fire-cooked scenes, sunk into darkness, slowly
           crossfading between the grill and the wood-fired oven */}
@@ -229,7 +261,7 @@ export default function HeroBrace({
       <div className="brace-vignette absolute inset-0" />
 
       {/* Content */}
-      <div className="brace-content relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-5 pt-[104px] sm:pt-[108px]">
+      <div className="brace-content relative z-10 mx-auto flex max-w-6xl flex-col justify-center px-5 pb-20 pt-36 sm:pb-28 sm:pt-40">
         <p className="brace-kicker text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-amber-200/80 sm:text-sm sm:tracking-[0.32em]">
           {eyebrow}
         </p>
@@ -253,7 +285,7 @@ export default function HeroBrace({
 
         <div className="brace-rule mt-6 h-[3px] w-0 rounded-full" />
 
-        <p className="brace-sub mt-6 max-w-xl text-base text-cream/85 sm:text-lg">
+        <p className="brace-sub mt-6 max-w-xl text-base leading-relaxed text-cream/95 sm:text-lg">
           {subtitle}
         </p>
 
@@ -292,7 +324,7 @@ export default function HeroBrace({
       </div>
 
       {/* Scroll cue */}
-      <div className="brace-scrollcue absolute inset-x-0 bottom-6 z-10 hidden flex-col items-center gap-2 text-[0.7rem] uppercase tracking-[0.3em] text-cream/60 sm:flex">
+      <div className="brace-scrollcue absolute inset-x-0 bottom-6 z-10 hidden flex-col items-center gap-2 text-[0.7rem] uppercase tracking-[0.3em] text-cream/60 lg:flex">
         <span>{scrollCue}</span>
         <span className="brace-scrollcue-line" aria-hidden="true" />
       </div>

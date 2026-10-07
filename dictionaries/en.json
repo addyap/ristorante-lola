@@ -263,5 +263,14 @@
     "tagline": "Restaurant · Pizzeria in Fermignano",
     "facebook": "Follow us on Facebook",
     "rights": "All rights reserved."
+  },
+  "kitchen": {
+    "title": "Scampi, from grill to plate",
+    "body": "A moment in the kitchen: cooking over the coals and the platter ready for the table.",
+    "video": "Watch the kitchen video",
+    "grill": "Scampi on the grill",
+    "platter": "The scampi platter",
+    "team": "In the kitchen with the scampi platter",
+    "more": "More kitchen photos"
   }
 }

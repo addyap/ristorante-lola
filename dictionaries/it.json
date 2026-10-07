@@ -263,5 +263,14 @@
     "tagline": "Ristorante · Pizzeria a Fermignano",
     "facebook": "Seguici su Facebook",
     "rights": "Tutti i diritti riservati."
+  },
+  "kitchen": {
+    "title": "Scampi, dalla brace al piatto",
+    "body": "Un momento in cucina: la cottura sulla brace e il vassoio pronto da portare in tavola.",
+    "video": "Guarda il video in cucina",
+    "grill": "Scampi alla brace",
+    "platter": "Il vassoio di scampi",
+    "team": "In cucina con il vassoio di scampi",
+    "more": "Altre foto dalla cucina"
   }
 }

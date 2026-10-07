@@ -263,5 +263,14 @@
     "tagline": "Restaurant · Pizzeria à Fermignano",
     "facebook": "Suivez-nous sur Facebook",
     "rights": "Tous droits réservés."
+  },
+  "kitchen": {
+    "title": "Scampi, de la braise à l’assiette",
+    "body": "Un moment en cuisine : la cuisson sur la braise et le plateau prêt à être servi.",
+    "video": "Voir la vidéo en cuisine",
+    "grill": "Scampi sur la braise",
+    "platter": "Le plateau de scampi",
+    "team": "En cuisine avec le plateau de scampi",
+    "more": "Plus de photos en cuisine"
   }
 }

@@ -263,5 +263,14 @@
     "tagline": "Restaurant · Pizzeria in Fermignano",
     "facebook": "Folgen Sie uns auf Facebook",
     "rights": "Alle Rechte vorbehalten."
+  },
+  "kitchen": {
+    "title": "Scampi, vom Grill auf den Teller",
+    "body": "Ein Moment in der Küche: das Garen über der Glut und die servierfertige Platte.",
+    "video": "Video aus der Küche ansehen",
+    "grill": "Scampi auf dem Grill",
+    "platter": "Die Scampi-Platte",
+    "team": "In der Küche mit der Scampi-Platte",
+    "more": "Weitere Küchenfotos"
   }
 }
