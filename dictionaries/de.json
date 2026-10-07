@@ -54,6 +54,8 @@
     ]
   },
   "menu": {
+    "browseLabel": "Speisekarte ansehen",
+    "allCategories": "Alle Kategorien",
     "title": "Die Speisekarte",
     "subtitle": "Unsere Küche, von hausgemachten Primi bis zu Pizzen aus dem Holzofen.",
     "note": "Einige Preise werden noch aktualisiert — bitte rufen Sie uns zur Bestätigung an.",

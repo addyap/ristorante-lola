@@ -54,6 +54,8 @@
     ]
   },
   "menu": {
+    "browseLabel": "Sfoglia il menù",
+    "allCategories": "Tutte le categorie",
     "title": "Il menù",
     "subtitle": "La nostra cucina, dai primi fatti in casa alle pizze cotte nel forno a legna.",
     "note": "Alcuni prezzi sono in fase di aggiornamento: chiamateci per confermare.",

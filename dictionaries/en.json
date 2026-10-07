@@ -54,6 +54,8 @@
     ]
   },
   "menu": {
+    "browseLabel": "Browse the menu",
+    "allCategories": "All categories",
     "title": "The menu",
     "subtitle": "Our kitchen, from homemade first courses to pizzas from the wood-fired oven.",
     "note": "Some prices are still being updated — please call us to confirm.",

@@ -54,6 +54,8 @@
     ]
   },
   "menu": {
+    "browseLabel": "Parcourir la carte",
+    "allCategories": "Toutes les catégories",
     "title": "La carte",
     "subtitle": "Notre cuisine, des primi faits maison aux pizzas cuites au four à bois.",
     "note": "Certains prix sont en cours de mise à jour — appelez-nous pour confirmer.",
