@@ -125,21 +125,35 @@ export default function Home({ params }: { params: { lang: string } }) {
               <p className="mt-3 text-charcoal/70">{dict.gallery.subtitle}</p>
             </div>
             <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-              {gallery.map((photo, i) => (
+              {gallery.map((item) => (
                 <div
-                  key={photo.src}
+                  key={item.src}
                   className={
                     "relative overflow-hidden rounded-xl ring-1 ring-cream-dark " +
-                    (i === 0 ? "col-span-2 row-span-2 aspect-square" : "aspect-square")
+                    (item.cls ?? "aspect-square")
                   }
                 >
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    fill
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    className="object-cover transition-transform duration-500 hover:scale-105"
-                  />
+                  {item.video ? (
+                    <video
+                      className="absolute inset-0 h-full w-full object-cover"
+                      src={item.video}
+                      poster={item.src}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      aria-label={item.alt}
+                    />
+                  ) : (
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                      className="object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                  )}
                 </div>
               ))}
             </div>
