@@ -193,7 +193,7 @@ export default function HeroBrace({
   return (
     <section
       ref={rootRef}
-      className="brace-hero relative h-[86svh] min-h-[560px] max-h-[860px] w-full overflow-hidden bg-[#0b0908] text-cream"
+      className="brace-hero relative h-[84svh] min-h-[600px] max-h-[760px] w-full overflow-hidden bg-[#0b0908] text-cream sm:h-[66svh] sm:max-h-[700px]"
     >
       {/* Layer 1 — fire-cooked scenes, sunk into darkness, slowly
           crossfading between the grill and the wood-fired oven */}
