@@ -37,13 +37,16 @@ export default function Header({
     return () => document.removeEventListener("keydown", onKey);
   }, []);
 
+  // Home sections are addressed as /lang#section so the same links work
+  // from inner pages (blog, FAQ); on the home page they just scroll.
   const links = [
-    { href: "#specialties", label: dict.nav.specialties },
-    { href: "#menu", label: dict.nav.menu },
-    { href: "#gallery", label: dict.nav.gallery },
-    { href: "#about", label: dict.nav.about },
-    { href: "#faq", label: dict.nav.faq },
-    { href: "#info", label: dict.nav.info },
+    { href: `/${lang}#specialties`, label: dict.nav.specialties },
+    { href: `/${lang}#menu`, label: dict.nav.menu },
+    { href: `/${lang}#gallery`, label: dict.nav.gallery },
+    { href: `/${lang}#about`, label: dict.nav.about },
+    { href: `/${lang}/blog`, label: dict.nav.blog },
+    { href: `/${lang}/faq`, label: dict.nav.faq },
+    { href: `/${lang}#info`, label: dict.nav.info },
   ];
 
   // The bar looks solid whenever scrolled OR the mobile menu is open.
@@ -77,7 +80,7 @@ export default function Header({
           />
           <span
             className={
-              "font-serif text-lg leading-none transition-colors sm:text-xl " +
+              "whitespace-nowrap font-serif text-lg leading-none transition-colors sm:text-xl " +
               (barSolid ? "text-charcoal" : "text-cream")
             }
           >
@@ -89,7 +92,7 @@ export default function Header({
         </Link>
 
         {/* Desktop nav + language */}
-        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+        <nav className="hidden items-center gap-4 whitespace-nowrap text-sm font-medium lg:flex xl:gap-6">
           {links.map((l) => (
             <a
               key={l.href}
@@ -107,7 +110,7 @@ export default function Header({
         </nav>
 
         <div className="flex items-center gap-2">
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <LanguageSwitcher current={lang} light={!barSolid} />
           </div>
 
@@ -118,7 +121,7 @@ export default function Header({
             aria-label="Menu"
             aria-expanded={open}
             className={
-              "flex h-10 w-10 items-center justify-center rounded-full transition-colors md:hidden " +
+              "flex h-10 w-10 items-center justify-center rounded-full transition-colors lg:hidden " +
               (barSolid
                 ? "text-charcoal hover:bg-cream-dark/50"
                 : "text-cream hover:bg-white/10")
@@ -142,7 +145,7 @@ export default function Header({
 
       {/* Mobile dropdown panel */}
       {open && (
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <nav className="mx-4 mb-3 rounded-2xl bg-cream p-2 shadow-2xl ring-1 ring-cream-dark">
             {links.map((l) => (
               <a

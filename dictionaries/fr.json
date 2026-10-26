@@ -9,6 +9,7 @@
     "gallery": "Galerie",
     "about": "Le lieu",
     "faq": "FAQ",
+    "blog": "Blog",
     "info": "Nous trouver",
     "reserve": "Réserver"
   },
@@ -213,36 +214,7 @@
   "faq": {
     "title": "Questions fréquentes",
     "subtitle": "Tout ce qu'il faut savoir avant de venir chez Lola.",
-    "items": [
-      {
-        "q": "Quels sont vos horaires ?",
-        "a": "Nous sommes ouverts le midi de 12h00 à 14h30 et le soir de 19h00 à 22h00. Nous sommes fermés le mercredi."
-      },
-      {
-        "q": "Comment réserver une table ?",
-        "a": "Appelez-nous au 0722 331684 ou au 347 762 1359, ou écrivez-nous sur WhatsApp. Nous conseillons de réserver le week-end et lors des soirées spéciales."
-      },
-      {
-        "q": "Proposez-vous des options végétariennes ?",
-        "a": "Oui. Vous trouverez plusieurs pizzas végétariennes, des accompagnements de légumes et de grandes salades, ainsi que des pâtes maison sans viande."
-      },
-      {
-        "q": "Les pizzas sont-elles cuites au four à bois ?",
-        "a": "Oui, toutes nos pizzas sont cuites au four à bois. Nos pâtes sont faites maison et la viande est cuite à la braise."
-      },
-      {
-        "q": "Est-ce un endroit adapté aux enfants ?",
-        "a": "Tout à fait. Une aire de jeux extérieure et un boulodrome se trouvent juste à côté du restaurant — un vrai plaisir pour petits et grands, midi et soir."
-      },
-      {
-        "q": "Faut-il commander la Fiorentina à l'avance ?",
-        "a": "Oui, la Fiorentina est disponible uniquement sur réservation. Appelez-nous à l'avance pour que nous la préparions comme il se doit."
-      },
-      {
-        "q": "Où êtes-vous situés ?",
-        "a": "Nous sommes au Via S. Caterina da Siena 16, à Fermignano (PU), à deux pas du centre. La carte et l'itinéraire se trouvent dans la section « Nous trouver »."
-      }
-    ]
+    "all": "Toutes les questions"
   },
   "info": {
     "title": "Nous trouver",
@@ -262,6 +234,7 @@
     "mapCta": "Itinéraire"
   },
   "footer": {
+    "navLabel": "Navigation du site",
     "tagline": "Restaurant · Pizzeria à Fermignano",
     "facebook": "Suivez-nous sur Facebook",
     "rights": "Tous droits réservés."
@@ -274,5 +247,37 @@
     "platter": "Le plateau de scampi",
     "team": "En cuisine avec le plateau de scampi",
     "more": "Plus de photos en cuisine"
+  },
+  "blog": {
+    "eyebrow": "Le journal de da Lola",
+    "title": "Histoires de Fermignano",
+    "subtitle": "Vie, traditions, cuisine et culture de la vallée du Metauro, racontées depuis notre cuisine.",
+    "metaTitle": "Blog — Traditions, cuisine et vie à Fermignano | Ristorante da Lola",
+    "metaDescription": "Histoires du Montefeltro : le Palio de la Grenouille, la truffe d'Acqualagna, la cuisine des Marches, Bramante et les excursions autour de Fermignano et d'Urbino.",
+    "readMore": "Lire l'article",
+    "minutes": "{n} min de lecture",
+    "back": "Tous les articles",
+    "categories": {
+      "traditions": "Traditions",
+      "food": "Cuisine",
+      "places": "Terroir"
+    },
+    "related": "À lire aussi",
+    "ctaTitle": "Venez nous voir",
+    "ctaBody": "Pâtes maison, viande à la braise et pizza au feu de bois, à quelques pas du centre de Fermignano. Ouvert midi et soir, tous les jours sauf le mercredi.",
+    "ctaBook": "Réserver sur WhatsApp",
+    "ctaMenu": "Voir la carte",
+    "homeTitle": "Sur notre blog",
+    "homeSubtitle": "Traditions, saveurs et lieux autour de Fermignano.",
+    "homeAll": "Tous les articles"
+  },
+  "faqPage": {
+    "eyebrow": "Avant de venir",
+    "metaTitle": "Questions fréquentes — Horaires, réservations et accès | Ristorante da Lola",
+    "metaDescription": "Horaires, réservations, plats typiques, options végétariennes, enfants et accès à Fermignano : les réponses aux questions les plus fréquentes sur Ristorante da Lola.",
+    "jump": "Aller à",
+    "stillTitle": "Vous n'avez pas trouvé la réponse ?",
+    "stillBody": "Appelez-nous ou écrivez-nous sur WhatsApp : nous vous répondrons avec plaisir.",
+    "call": "Appeler le restaurant"
   }
 }

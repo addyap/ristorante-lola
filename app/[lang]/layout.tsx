@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import "../globals.css";
 import { locales, isLocale, type Locale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
+import { alternatesFor } from "@/lib/seo";
 import {
   SITE_URL,
   SITE_NAME,
@@ -52,14 +53,6 @@ const KEYWORDS: Record<Locale, string[]> = {
   ],
 };
 
-// Build the hreflang alternates map: each locale + an x-default.
-function languageAlternates() {
-  const languages: Record<string, string> = {};
-  for (const l of locales) languages[l] = `${SITE_URL}/${l}`;
-  languages["x-default"] = `${SITE_URL}/it`;
-  return languages;
-}
-
 const playfair = Fraunces({
   subsets: ["latin"],
   variable: "--font-serif",
@@ -90,10 +83,7 @@ export async function generateMetadata({
     description: dict.meta.description,
     applicationName: SITE_NAME,
     keywords: KEYWORDS[lang],
-    alternates: {
-      canonical: `${SITE_URL}/${lang}`,
-      languages: languageAlternates(),
-    },
+    alternates: alternatesFor(lang),
     robots: {
       index: true,
       follow: true,

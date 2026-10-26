@@ -9,6 +9,7 @@
     "gallery": "Galleria",
     "about": "Il locale",
     "faq": "FAQ",
+    "blog": "Blog",
     "info": "Dove siamo",
     "reserve": "Prenota"
   },
@@ -213,36 +214,7 @@
   "faq": {
     "title": "Domande frequenti",
     "subtitle": "Tutto quello che vi serve sapere prima di passare da Lola.",
-    "items": [
-      {
-        "q": "Quando siete aperti?",
-        "a": "Siamo aperti a pranzo dalle 12:00 alle 14:30 e a cena dalle 19:00 alle 22:00. Il mercoledì siamo chiusi."
-      },
-      {
-        "q": "Come posso prenotare un tavolo?",
-        "a": "Potete chiamarci allo 0722 331684 o al 347 762 1359, oppure scriverci su WhatsApp. Vi consigliamo di prenotare per il fine settimana e le serate speciali."
-      },
-      {
-        "q": "Avete opzioni vegetariane?",
-        "a": "Sì. Trovate diverse pizze vegetariane, contorni di verdure e insalatone, oltre a primi di pasta fatta in casa senza carne."
-      },
-      {
-        "q": "Le pizze sono cotte nel forno a legna?",
-        "a": "Sì, tutte le nostre pizze sono cotte nel forno a legna. La pasta è fatta in casa e la carne è cotta alla brace."
-      },
-      {
-        "q": "È un posto adatto ai bambini?",
-        "a": "Assolutamente. Accanto al ristorante ci sono un parco giochi all'esterno e un bocciodromo: un ottimo svago per grandi e piccini, sia a pranzo che a cena."
-      },
-      {
-        "q": "Serve prenotare per la Fiorentina?",
-        "a": "Sì, la Fiorentina è disponibile solo su prenotazione. Chiamateci in anticipo così la prepariamo come si deve."
-      },
-      {
-        "q": "Dove vi trovate?",
-        "a": "Siamo in Via S. Caterina da Siena 16, a Fermignano (PU), a due passi dal centro. Trovate la mappa e le indicazioni nella sezione “Dove siamo”."
-      }
-    ]
+    "all": "Tutte le domande"
   },
   "info": {
     "title": "Dove siamo",
@@ -262,6 +234,7 @@
     "mapCta": "Indicazioni stradali"
   },
   "footer": {
+    "navLabel": "Navigazione del sito",
     "tagline": "Ristorante · Pizzeria a Fermignano",
     "facebook": "Seguici su Facebook",
     "rights": "Tutti i diritti riservati."
@@ -274,5 +247,37 @@
     "platter": "Il vassoio di scampi",
     "team": "In cucina con il vassoio di scampi",
     "more": "Altre foto dalla cucina"
+  },
+  "blog": {
+    "eyebrow": "Il blog di da Lola",
+    "title": "Storie da Fermignano",
+    "subtitle": "Vita, tradizioni, cucina e cultura della valle del Metauro, raccontate dalla nostra cucina.",
+    "metaTitle": "Blog — Tradizioni, cucina e vita a Fermignano | Ristorante da Lola",
+    "metaDescription": "Storie dal Montefeltro: il Palio della Rana, il tartufo di Acqualagna, la cucina marchigiana, Bramante e le gite intorno a Fermignano e Urbino.",
+    "readMore": "Leggi l'articolo",
+    "minutes": "{n} min di lettura",
+    "back": "Tutti gli articoli",
+    "categories": {
+      "traditions": "Tradizioni",
+      "food": "Cucina",
+      "places": "Territorio"
+    },
+    "related": "Continua a leggere",
+    "ctaTitle": "Venite a trovarci",
+    "ctaBody": "Pasta fatta in casa, carne alla brace e pizza nel forno a legna, a pochi passi dal centro di Fermignano. Siamo aperti a pranzo e a cena, tranne il mercoledì.",
+    "ctaBook": "Prenota su WhatsApp",
+    "ctaMenu": "Guarda il menù",
+    "homeTitle": "Dal nostro blog",
+    "homeSubtitle": "Tradizioni, sapori e luoghi intorno a Fermignano.",
+    "homeAll": "Tutti gli articoli"
+  },
+  "faqPage": {
+    "eyebrow": "Prima di venire",
+    "metaTitle": "Domande frequenti — Orari, prenotazioni e come arrivare | Ristorante da Lola",
+    "metaDescription": "Orari, prenotazioni, piatti tipici, opzioni vegetariane, bambini e come arrivare a Fermignano: le risposte alle domande più frequenti su Ristorante da Lola.",
+    "jump": "Vai a",
+    "stillTitle": "Non avete trovato la risposta?",
+    "stillBody": "Chiamateci o scriveteci su WhatsApp: vi rispondiamo volentieri.",
+    "call": "Chiama il ristorante"
   }
 }

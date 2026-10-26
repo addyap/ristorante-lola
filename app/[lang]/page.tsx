@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
@@ -8,20 +9,13 @@ import Header from "@/components/Header";
 import HeroBrace from "@/components/HeroBrace";
 import MenuSection from "@/components/MenuSection";
 import HashScroll from "@/components/HashScroll";
-
-const MAP_QUERY =
-  "https://www.google.com/maps/search/?api=1&query=Via+S.+Caterina+da+Siena+16+61033+Fermignano";
-const MAP_EMBED =
-  "https://www.google.com/maps?q=Via%20S.%20Caterina%20da%20Siena%2016%2061033%20Fermignano&output=embed";
-const TEL = "+390722331684";
-const TEL_MOBILE = "+393477621359";
-const EMAIL = "lolaristorante@gmail.com";
-const WHATSAPP_NUMBER = "393477621359";
-const FACEBOOK_URL = "https://www.facebook.com/RistorantePizzeriaDaLola";
-
-function waHref(message: string) {
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-}
+import FaqList from "@/components/FaqList";
+import PostCard from "@/components/PostCard";
+import SiteFooter from "@/components/SiteFooter";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
+import { homeFaq } from "@/lib/faq";
+import { posts } from "@/lib/blog";
+import { MAP_QUERY, MAP_EMBED, TEL, TEL_MOBILE, EMAIL, waHref } from "@/lib/contact";
 
 export default function Home({ params }: { params: { lang: string } }) {
   if (!isLocale(params.lang)) notFound();
@@ -252,7 +246,32 @@ export default function Home({ params }: { params: { lang: string } }) {
           </div>
         </section>
 
-        {/* FAQ */}
+        {/* From the blog */}
+        <section id="blog" className="scroll-mt-28 bg-cream">
+          <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <h2 className="font-serif text-3xl text-charcoal sm:text-4xl">
+                  {dict.blog.homeTitle}
+                </h2>
+                <p className="mt-3 text-charcoal/70">{dict.blog.homeSubtitle}</p>
+              </div>
+              <Link
+                href={`/${lang}/blog`}
+                className="font-semibold text-basil transition-colors hover:text-basil-dark"
+              >
+                {dict.blog.homeAll} →
+              </Link>
+            </div>
+            <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {posts.slice(0, 3).map((post) => (
+                <PostCard key={post.slug} post={post} lang={lang} dict={dict} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ — the short list; the full set is on /[lang]/faq */}
         <section id="faq" className="scroll-mt-28 bg-cream-dark/40">
           <div className="mx-auto max-w-3xl px-5 py-16 sm:py-20">
             <div className="text-center">
@@ -262,43 +281,18 @@ export default function Home({ params }: { params: { lang: string } }) {
               <div className="tricolore mx-auto mt-4 w-24 rounded-full" />
               <p className="mt-4 text-charcoal/70">{dict.faq.subtitle}</p>
             </div>
-            <div className="mt-10 divide-y divide-cream-dark overflow-hidden rounded-2xl bg-cream ring-1 ring-cream-dark">
-              {dict.faq.items.map((item) => (
-                <details key={item.q} className="group">
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-5 font-medium text-charcoal transition-colors hover:bg-cream-dark/30 sm:px-6">
-                    <span>{item.q}</span>
-                    <svg
-                      viewBox="0 0 24 24"
-                      className="h-5 w-5 shrink-0 text-basil transition-transform duration-300 group-open:rotate-45"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      aria-hidden="true"
-                    >
-                      <path d="M12 5v14M5 12h14" strokeLinecap="round" />
-                    </svg>
-                  </summary>
-                  <p className="px-5 pb-5 leading-relaxed text-charcoal/75 sm:px-6">
-                    {item.a}
-                  </p>
-                </details>
-              ))}
+            <div className="mt-10">
+              <FaqList items={homeFaq(lang)} />
             </div>
+            <p className="mt-8 text-center">
+              <Link
+                href={`/${lang}/faq`}
+                className="font-semibold text-basil transition-colors hover:text-basil-dark"
+              >
+                {dict.faq.all} →
+              </Link>
+            </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                mainEntity: dict.faq.items.map((item) => ({
-                  "@type": "Question",
-                  name: item.q,
-                  acceptedAnswer: { "@type": "Answer", text: item.a },
-                })),
-              }),
-            }}
-          />
         </section>
 
         {/* Info — Find Us */}
@@ -398,55 +392,8 @@ export default function Home({ params }: { params: { lang: string } }) {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-charcoal text-cream/80">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-5 py-10 text-center">
-          <span className="font-serif text-2xl text-cream">
-            Ristorante da <span className="text-[#ecd39a]">Lola</span>
-          </span>
-          <p className="text-sm">{dict.footer.tagline}</p>
-          <a
-            href={FACEBOOK_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-medium text-cream transition-colors hover:text-tomato"
-          >
-            <svg
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-              className="h-4 w-4 fill-current"
-            >
-              <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z" />
-            </svg>
-            {dict.footer.facebook}
-          </a>
-          <p className="text-xs text-cream/50">
-            © {new Date().getFullYear()} Ristorante da Lola — {dict.footer.rights}
-          </p>
-        </div>
-      </footer>
-
-      {/* Floating WhatsApp action */}
-      <a
-        href={waHref(dict.info.whatsappMsg)}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={dict.info.whatsappCta}
-        className="brace-fab group"
-      >
-        <span className="brace-fab-ring" aria-hidden="true" />
-        <WhatsAppIcon className="relative z-10 h-7 w-7 shrink-0 fill-current" />
-        <span className="brace-fab-label">{dict.info.whatsappCta}</span>
-      </a>
+      <SiteFooter lang={lang} dict={dict} />
     </>
-  );
-}
-
-function WhatsAppIcon({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-      <path d="M17.5 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.08-.3-.15-1.26-.47-2.4-1.48-.89-.8-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48c0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z" />
-    </svg>
   );
 }
 
