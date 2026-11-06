@@ -4,6 +4,14 @@ import type { Dictionary } from "@/lib/dictionaries";
 import { FACEBOOK_URL, waHref } from "@/lib/contact";
 import WhatsAppIcon from "./WhatsAppIcon";
 
+// Designer credit, in the page's language.
+const CREDIT: Record<Locale, { text: string; href: string }> = {
+  it: { text: "Sito realizzato da", href: "https://thevitrine.fr/it/" },
+  en: { text: "Website by", href: "https://thevitrine.fr/en/" },
+  fr: { text: "Site réalisé par", href: "https://thevitrine.fr/" },
+  de: { text: "Website von", href: "https://thevitrine.fr/en/" },
+};
+
 // Footer + floating WhatsApp action, shared by every page.
 export default function SiteFooter({
   lang,
@@ -58,6 +66,17 @@ export default function SiteFooter({
           </a>
           <p className="text-xs text-cream/50">
             © {new Date().getFullYear()} Ristorante da Lola — {dict.footer.rights}
+          </p>
+          <p className="text-xs text-cream/50">
+            {CREDIT[lang].text}{" "}
+            <a
+              href={CREDIT[lang].href}
+              target="_blank"
+              rel="noopener"
+              className="text-cream/70 underline underline-offset-2 transition-colors hover:text-amber-300"
+            >
+              The Vitrine
+            </a>
           </p>
         </div>
       </footer>
